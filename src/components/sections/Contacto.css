@@ -1,0 +1,14 @@
+.card-contact{
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card-contact a{
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.subtitle-contact{
+  text-align: center;
+}

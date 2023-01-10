@@ -1,0 +1,150 @@
+.sidebar{
+  height: 100%;
+  position: fixed;
+  background-color: #101010;
+  border-right: #14152a 3px solid;
+  box-shadow: 0 0 50px 10px #14152a;
+  overflow: hidden;
+  transition: max-width 1s ease;
+  z-index: 3;
+}
+
+.sidebar-list{
+  height: calc(100% - 8rem);
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-close{
+  max-width: 55px;
+}
+
+.sidebar-open{
+  max-width: 200px;
+}
+
+.sidebar ul{
+  margin: 0;
+  list-style-type: none;
+  padding: 0 1rem;
+}
+
+.sidebar li{
+  margin: 30% 0;
+}
+
+.sidebar-list a{
+  display: flex;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.sidebar-list a:first-child{
+  align-items: center;
+}
+
+.sidebar-list a span{
+  margin-left: 5px;
+}
+
+.sidebar-btn{
+  background-color: #101010;
+  border-radius: 5px;
+  color: aliceblue;
+  font-size: 18px;
+  text-align: center;
+  border: 1px aliceblue solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-btn:hover{
+  cursor: pointer;
+}
+
+.sidebar-btn span{
+  font-size: 0.6rem;
+}
+
+.container-sidebar-btn{
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  align-items: center;
+}
+
+.span-hide{
+  animation: hide 1s forwards;
+}
+
+@keyframes hide {
+  100%{
+    opacity: 0;
+  }
+}
+
+.span-show{
+  animation: show 1s forwards;
+}
+
+@keyframes show {
+  0%{
+     opacity: 0; 
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.sidebar .star{
+  position: absolute;
+  left: calc(50% - 0.6rem);
+  top: 25%;
+  font-size: 1.2rem;
+  filter: drop-shadow(0 0 1rem aliceblue);
+  animation: estrella-saltando 4s ease infinite;
+}
+
+@keyframes estrella-saltando {
+  33%{
+    transform: translateY(-5rem);
+  }
+
+  66%{
+    transform: translateY(0rem);
+  }
+
+  82%{
+    transform: translateY(-5rem);
+  }
+}
+
+.sidebar-footer{
+  color: grey;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.sidebar-footer .autor{
+  min-width: max-content;
+}
+
+.sidebar-footer .license-title{
+  margin: 1.1rem auto 2px;
+  font-size: 0.7rem;
+}
+
+.sidebar-footer .license{
+  margin: 0;
+  font-size: 0.6rem;
+}
+
+.sidebar-footer a{
+  color: grey;
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.proyectos-grid{
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+}
+
+@media (min-width: 520px) {
+  .proyectos-grid{
+    grid-template-columns: auto auto;
+  }
+}

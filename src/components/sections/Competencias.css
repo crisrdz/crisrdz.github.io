@@ -1,0 +1,15 @@
+.competencias{
+  font-size: 0.8rem;
+}
+
+.competencias ul{
+  padding: 0;
+  list-style-position: inside;
+  margin: 0 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .competencias{
+    font-size: 1.5rem;
+  }
+}

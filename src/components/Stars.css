@@ -1,0 +1,92 @@
+.svg{
+  position: fixed;
+  z-index: 1;
+  animation: movimiento-estrellas 4s infinite linear;
+  filter: drop-shadow(0 0 5px white);
+}
+
+@keyframes movimiento-estrellas {
+  50%{
+    transform: translate(5px) rotate(3deg);
+  }
+}
+
+.svg-1{
+  top: 10%;
+  left: 20%;
+}
+
+.svg-2{
+  bottom: 5%;
+  right: 5%;
+}
+
+.svg-3{
+  bottom: 5%;
+  left: 5%;
+}
+
+.svg-4{
+  top: 5%;
+  right: 5%;
+}
+
+.star{
+  position: fixed;
+}
+
+#star-1{
+  top: 20%;
+  left: 5%;
+}
+
+#star-2{
+  top: 40%;
+  left: 50%;
+}
+
+#star-3{
+  top: 12%;
+  left: 55%;
+}
+
+#star-4{
+  top: 40%;
+  left: 95%;
+}
+
+#star-5{
+  top: 8%;
+  left: 15%;
+}
+
+#star-6{
+  top: 90%;
+  left: 5%;
+}
+
+#star-7{
+  top: 80%;
+  left: 40%;
+}
+
+#star-8{
+  top: 70%;
+  left: 60%;
+}
+
+#star-9{
+  top: 90%;
+  left: 95%;
+}
+
+polyline, circle{
+  animation: brillo-estrellas 3s infinite ease;
+  filter: blur(0.3px);
+}
+
+@keyframes brillo-estrellas {
+  50%{
+    filter: blur(1px);
+  }
+}

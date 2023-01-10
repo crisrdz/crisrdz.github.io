@@ -1,0 +1,11 @@
+main{
+  background: radial-gradient(#252850, #111325);
+}
+
+.brightness{
+  filter: brightness(0.5);
+}
+
+.brightness-reverse{
+  filter: brightness(1);
+}
