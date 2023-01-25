@@ -2,11 +2,11 @@ import "./Proyecto.css";
 import { IoMdOpen } from "react-icons/io";
 import { useState, useEffect } from 'react'
 
-function Proyecto({ name = "Aún no es el momento...", img, url }) {
+function Proyecto({ name = "Aún no es el momento...", img, imgPosition = "center", url }) {
 
   const [mouseOver, setMouseOver] = useState(false)
   const [imgStyle, setImgStyle] = useState({})
-  const background = img ? `url("img/${img}") 100%/100%` : "radial-gradient(#252850, #101010)"
+  const background = img ? `url("img/${img}") 100% ${imgPosition} /100%` : "radial-gradient(#252850, #101010)"
 
   useEffect(() => {
     setImgStyle({background: background})

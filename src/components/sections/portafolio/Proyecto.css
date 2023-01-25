@@ -25,6 +25,7 @@
 }
 
 .card-img{
+  top: 0;
   height: 100%;
   width: 100%;
   transition: filter 1s;
@@ -42,7 +43,7 @@
 
 @media (min-width: 520px) {
   .card{
-    margin: 0 1rem 0 0;
+    margin: 0 1rem 1rem 0;
   }
 }
 
