@@ -1,4 +1,3 @@
-import "./AboutMe.css";
 import { IoMdPlanet } from "react-icons/io";
 
 function AboutMe() {
@@ -23,7 +22,6 @@ function AboutMe() {
             </div>
           </div>
         </div>
-        <div></div>
       </div>
     </section>
   );

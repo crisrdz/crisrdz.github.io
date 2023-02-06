@@ -1,3 +1,19 @@
+:root{
+  --icon-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  :root{
+    --icon-size: 2.6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root{
+    --icon-size: 3rem;
+  }
+}
+
 .card{
   height: 5.5rem;
   width: 11rem;
@@ -34,10 +50,11 @@
 
 .card-right{
   display: flex;
+  flex-direction: column;
   height: 100%;
   align-items: center;
-  justify-content: center;
-  font-size: 2rem;
+  justify-content: space-around;
+  font-size: var(--icon-size);
   background-color: #111325;
 }
 
@@ -53,10 +70,6 @@
     width: 16rem;
     margin: 0.5rem;
     border-radius: 1.8rem;
-  }
-
-  .card-right{
-    font-size: 4rem;
   }
 }
 
@@ -78,6 +91,16 @@
   filter: drop-shadow(0 0 5px aliceblue);
 }
 
+.card-right button, .modal button{
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: white;
+  height: var(--icon-size);
+  font-size: var(--icon-size);
+}
+
 .show-name{
   animation: show 1s;
 }
@@ -89,5 +112,69 @@
 
   100%{
     opacity: 1;
+  }
+}
+
+.modal{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 3px solid black;
+  border-radius: 2rem;
+  height: 15rem;
+  width: 10.8rem;
+  z-index: 15;
+  background: radial-gradient(#252850, #111325);
+  padding: 1.4rem;
+
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 20px 0 black;
+}
+
+.modal-none{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-title{
+  margin: 1rem 0 0;
+  font-size: 1rem;
+}
+
+.modal-list{
+  padding: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  list-style-position: inside;
+}
+
+.modal button{
+  position: absolute;
+  top: 0.8rem;
+  right: 0.5rem;
+}
+
+@media (min-width: 425px) {
+  .modal{
+    height: 15rem;
+    width: 14rem;
+  }
+
+  .modal-title, .modal-list{
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal{
+    padding: 2.5rem 2rem;
+    height: 17rem;
+    width: 15rem;
+  }
+
+  .modal-title, .modal-list{
+    font-size: 1.25rem;
   }
 }
