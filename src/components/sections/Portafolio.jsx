@@ -21,6 +21,12 @@ function Portafolio() {
               name="A daily cat fact!"
               technologies={["React"]}
             />
+            <Proyecto 
+              img="proyectos/logo-to-do.svg"
+              url="https://to-do-project-production.up.railway.app/"
+              name="To-Do App"
+              technologies={["MongoDB", "Express.js", "React", "Node.js"]}
+            />
             <Proyecto />
           </div>
         </div>
