@@ -1,12 +1,14 @@
 import "./Proyecto.css";
-import { IoIosInformationCircle, IoMdOpen, IoIosCloseCircleOutline } from "react-icons/io";
+import { IoIosInformationCircle, IoMdOpen, IoIosCloseCircleOutline, IoLogoGithub } from "react-icons/io";
 import { useState, useEffect, useRef } from "react";
 
 function Proyecto({
   name = "Aún no es el momento...",
   img,
   imgPosition = "center",
-  url,
+  urlProduction = null,
+  urlSourceCode = null,
+  isSourceCode = false,
   technologies = [],
 }) {
   const [mouseOver, setMouseOver] = useState(false);
@@ -60,14 +62,23 @@ function Proyecto({
           </p>
         </div>
         <div className="card-right">
-          {url ? (
+          {urlProduction || urlSourceCode ? (
             <>
               <button onClick={openModal}>
-                <IoIosInformationCircle />
+                <IoIosInformationCircle title="Detalles" />
               </button>
-              <a href={url} target="_blank">
-                <IoMdOpen />
-              </a>
+              {
+                urlProduction &&
+                <a href={urlProduction} target="_blank">
+                  <IoMdOpen title="Página en producción" />
+                </a>
+              }
+              {
+                urlSourceCode && 
+                <a href={urlSourceCode} target="_blank">
+                  <IoLogoGithub title="Código fuente"/>
+                </a>
+              }
             </>
           ) : (
             <IoMdOpen />

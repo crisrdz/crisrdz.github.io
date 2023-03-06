@@ -1,16 +1,16 @@
 :root{
-  --icon-size: 1.8rem;
+  --icon-size: 1.5rem;
 }
 
 @media (min-width: 768px) {
   :root{
-    --icon-size: 2.6rem;
+    --icon-size: 2.3rem;
   }
 }
 
 @media (min-width: 1024px) {
   :root{
-    --icon-size: 3rem;
+    --icon-size: 2.7rem;
   }
 }
 

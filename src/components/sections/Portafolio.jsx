@@ -10,21 +10,24 @@ function Portafolio() {
           <div className="proyectos-grid">
             <Proyecto
               img="proyectos/logo-pokemons.png"
-              url="https://crisrdz.github.io/adivinalospokemon/"
+              urlProduction="https://crisrdz.github.io/adivinalospokemon/"
+              urlSourceCode="https://github.com/crisrdz/adivinalospokemon"
               name="¡Adivina los pokémon!"
               technologies={["React"]}
             />
             <Proyecto
               img="proyectos/logo-cat-fact.png"
               imgPosition="top"
-              url="https://crisrdz.github.io/daily-cat-fact/"
+              urlProduction="https://crisrdz.github.io/daily-cat-fact/"
+              urlSourceCode="https://github.com/crisrdz/daily-cat-fact"
               name="A daily cat fact!"
               technologies={["React"]}
             />
             <Proyecto 
               img="proyectos/logo-to-do.svg"
-              url="https://to-do-project-production.up.railway.app/"
+              urlSourceCode="https://github.com/crisrdz/to-do-project"
               name="To-Do App"
+              isSourceCode={true}
               technologies={["MongoDB", "Express.js", "React", "Node.js"]}
             />
             <Proyecto />
