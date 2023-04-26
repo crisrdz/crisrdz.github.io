@@ -25,6 +25,7 @@ function Portafolio() {
             />
             <Proyecto 
               img="proyectos/logo-to-do.svg"
+              urlProduction="https://to-do-project-production.up.railway.app/"
               urlSourceCode="https://github.com/crisrdz/to-do-project"
               name="To-Do App"
               isSourceCode={true}
