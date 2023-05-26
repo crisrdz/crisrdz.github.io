@@ -8,6 +8,20 @@ function Portafolio() {
         <div>
           <h3>Portafolio</h3>
           <div className="proyectos-grid">
+            <Proyecto 
+              img="proyectos/logo-to-do.svg"
+              urlProduction="https://to-do-project-production.up.railway.app/"
+              urlSourceCode="https://github.com/crisrdz/to-do-project"
+              name="To-Do App"
+              isSourceCode={true}
+              technologies={["MongoDB", "Express.js", "React", "Node.js"]}
+            />
+            <Proyecto 
+              img="proyectos/logo-chat-app.png"
+              urlProduction="https://chatapp-production-289e.up.railway.app/"
+              name="ChatApp"
+              technologies={["MongoDB", "Express.js", "React", "Node.js"]}
+            />
             <Proyecto
               img="proyectos/logo-pokemons.png"
               urlProduction="https://crisrdz.github.io/adivinalospokemon/"
@@ -23,15 +37,6 @@ function Portafolio() {
               name="A daily cat fact!"
               technologies={["React"]}
             />
-            <Proyecto 
-              img="proyectos/logo-to-do.svg"
-              urlProduction="https://to-do-project-production.up.railway.app/"
-              urlSourceCode="https://github.com/crisrdz/to-do-project"
-              name="To-Do App"
-              isSourceCode={true}
-              technologies={["MongoDB", "Express.js", "React", "Node.js"]}
-            />
-            <Proyecto />
           </div>
         </div>
       </div>
