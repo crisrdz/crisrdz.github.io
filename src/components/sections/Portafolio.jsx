@@ -19,7 +19,9 @@ function Portafolio() {
             <Proyecto 
               img="proyectos/logo-chat-app.png"
               urlProduction="https://chatapp-production-289e.up.railway.app/"
+              urlSourceCode="https://github.com/crisrdz/chat_app"
               name="ChatApp"
+              isSourceCode={true}
               technologies={["MongoDB", "Express.js", "React", "Node.js"]}
             />
             <Proyecto
