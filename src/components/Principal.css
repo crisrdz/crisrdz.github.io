@@ -1,5 +1,5 @@
 section{
-  height: 100vh;
+  min-height: 100vh;
   width: calc(100% - 55px);
   left: 55px;
   position: relative;
